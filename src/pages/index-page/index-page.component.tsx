@@ -1,3 +1,24 @@
+import Typewriter from 'typewriter-effect';
+
 export const IndexPage: React.FC = () => {
-  return <div>TODO: Index page</div>;
+  return (
+    <div>
+      <h1>
+        <Typewriter
+          options={{
+            loop: true,
+          }}
+          onInit={typewriter =>
+            typewriter
+              .typeString('Привет!')
+              .pauseFor(700)
+              .deleteAll()
+              .typeString('Hello!')
+              .pauseFor(700)
+              .start()
+          }
+        />
+      </h1>
+    </div>
+  );
 };
