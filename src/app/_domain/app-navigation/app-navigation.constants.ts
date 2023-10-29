@@ -3,12 +3,18 @@ import React from 'react';
 import { AppRoute } from './app-navigation.types';
 
 const IndexPage = React.lazy(() => import('$pages/index-page'));
+const GalleryPage = React.lazy(() => import('$pages/gallery-page'));
 
 export const APP_ROUTES: AppRoute[] = [
   {
     name: '~',
-    path: '/',
+    path: '',
     component: IndexPage,
+  },
+  {
+    name: '~/gallery',
+    path: '/gallery',
+    component: GalleryPage,
   },
   {
     name: '~/foo',
