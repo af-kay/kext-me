@@ -5,7 +5,7 @@ import { AliasOptions } from 'vite';
 
 const makeAliases = (): AliasOptions => {
   const prefix = '$';
-  const srcDirsToAlias = ['features', 'lib'];
+  const srcDirsToAlias = ['features', 'lib', 'pages'];
 
   return srcDirsToAlias.map(dir => {
     const aliasedPath = `${prefix}${dir}`;

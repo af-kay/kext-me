@@ -1,7 +1,11 @@
-export const App = () => {
+import { AppHeaderContent } from './app-header-content';
+import { AppLayout } from './app-layout';
+import { AppPagination } from './app-pagination';
+
+export const App: React.FC = () => {
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <AppLayout headerContent={<AppHeaderContent />}>
+      <AppPagination />
+    </AppLayout>
   );
 };

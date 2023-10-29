@@ -22,7 +22,8 @@
     "types": ["vitest/globals"],
     "paths": {
       "$features/*": ["./src/features/*"],
-      "$lib/*": ["./src/lib/*"]
+      "$lib/*": ["./src/lib/*"],
+      "$pages/*": ["./src/pages/*"]
     }
   },
   "include": ["src"],
