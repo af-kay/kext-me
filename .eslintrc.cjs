@@ -17,8 +17,9 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'import/order': [1, { 'newlines-between': 'always' }],
+    'no-empty': 1,
     'import/newline-after-import': [1, { count: 1 }],
-    '@typescript-eslint/no-unused-vars': ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+    '@typescript-eslint/no-unused-vars': [1, { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
 
     // TODO: enable and make exceptions for styled & react where needed
     'import/no-named-as-default': 0,
