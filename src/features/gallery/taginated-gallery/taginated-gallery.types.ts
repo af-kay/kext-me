@@ -6,7 +6,7 @@ export type ITaginatedGallery = {
 
 export type UseTaginatedGallery = (items: GalleryItem[]) => {
   selectedTag: undefined | GalleryTag;
-  selectTag: (tag: undefined | GalleryTag) => void;
+  selectOrToggleTag: (tag: undefined | GalleryTag) => void;
   filteredItems: GalleryItem[];
   tagsToSelect: GalleryTag[];
   hasTagsToSelect: boolean;

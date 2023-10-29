@@ -14,15 +14,18 @@ export const useTaginatedGallery: UseTaginatedGallery = items => {
     return deduplicatedTags;
   }, [items]);
 
-  const selectTag = useCallback(
+  const selectOrToggleTag = useCallback(
     (tag: undefined | GalleryTag) => {
-      if (tag && tagsToSelect.includes(tag)) {
+      const isTagValid = tag && tagsToSelect.includes(tag);
+      const isTagSelected = selectedTag === tag;
+
+      if (isTagValid && !isTagSelected) {
         setSelectedTag(tag);
       } else {
         setSelectedTag(undefined);
       }
     },
-    [tagsToSelect],
+    [tagsToSelect, selectedTag],
   );
 
   const filteredItems = useMemo(() => {
@@ -35,7 +38,7 @@ export const useTaginatedGallery: UseTaginatedGallery = items => {
 
   return {
     selectedTag,
-    selectTag,
+    selectOrToggleTag,
     filteredItems,
     tagsToSelect,
     hasTagsToSelect: Boolean(tagsToSelect.length > 0),

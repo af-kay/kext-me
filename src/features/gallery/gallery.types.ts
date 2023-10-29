@@ -9,6 +9,8 @@ export enum GalleryTag {
   IRL = 'irl',
   LowRes = 'low_res',
   HiRes = 'hi_res',
+  Sber = 'sber',
+  Me = 'me',
 }
 
 export type GalleryItem = {

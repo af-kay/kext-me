@@ -8,7 +8,7 @@ import { ITaginatedGallery } from './taginated-gallery.types';
 export const TaginatedGallery: React.FC<ITaginatedGallery> = ({ items }) => {
   const {
     selectedTag,
-    selectTag,
+    selectOrToggleTag,
     filteredItems,
     tagsToSelect,
     hasTagsToSelect,
@@ -21,19 +21,11 @@ export const TaginatedGallery: React.FC<ITaginatedGallery> = ({ items }) => {
           {tagsToSelect.map(tag => {
             const isSelected: boolean = tag === selectedTag;
 
-            const toggleOrSelectTag = () => {
-              if (isSelected) {
-                selectTag(undefined);
-              } else {
-                selectTag(tag);
-              }
-            };
-
             return (
               <Tag
                 key={tag}
                 isSelected={isSelected}
-                onClick={toggleOrSelectTag}
+                onClick={() => selectOrToggleTag(tag)}
               >
                 #{tag}
               </Tag>
@@ -46,7 +38,8 @@ export const TaginatedGallery: React.FC<ITaginatedGallery> = ({ items }) => {
           <GalleryImage
             key={item.imageProps.src}
             item={item}
-            onTagClick={selectTag}
+            selectedTags={selectedTag && [selectedTag]}
+            onTagClick={selectOrToggleTag}
           />
         ))}
       </ImagesLayout>
@@ -79,6 +72,7 @@ const Tag = styled.div<{ isSelected: boolean }>`
     p.isSelected &&
     css`
       backdrop-filter: brightness(0.9);
+      text-decoration: underline;
     `}
 `;
 
