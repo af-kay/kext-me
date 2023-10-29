@@ -2,14 +2,14 @@ import React from 'react';
 
 import { AppRoute } from './app-navigation.types';
 
-const IndexPage = React.lazy(() => import('$pages/index-page'));
+const MainPage = React.lazy(() => import('$pages/main-page'));
 const GalleryPage = React.lazy(() => import('$pages/gallery-page'));
 
 export const APP_ROUTES: Readonly<AppRoute[]> = [
   {
     name: '~',
     path: '',
-    component: IndexPage,
+    component: MainPage,
   },
   {
     name: '~/gallery',

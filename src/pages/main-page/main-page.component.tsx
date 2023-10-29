@@ -1,6 +1,6 @@
 import Typewriter from 'typewriter-effect';
 
-export const IndexPage: React.FC = () => {
+export const MainPage: React.FC = () => {
   return (
     <div>
       <h1>
