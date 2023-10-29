@@ -1,7 +1,9 @@
 import styled, { css } from 'styled-components';
+
+import { GalleryImage } from '../gallery-image';
+
 import { useTaginatedGallery } from './taginated-gallery.hooks';
 import { ITaginatedGallery } from './taginated-gallery.types';
-import { GalleryImage } from '../gallery-image';
 
 export const TaginatedGallery: React.FC<ITaginatedGallery> = ({ items }) => {
   const {
