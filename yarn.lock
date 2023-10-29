@@ -372,6 +372,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.52.0.tgz#78fe5f117840f69dc4a353adf9b9cd926353378c"
   integrity sha512-mjZVbpaeMZludF2fsWLD0Z9gCref1Tk4i9+wddjRvpUNqqcndPkBD09N/Mapey0b3jaXbLm2kICwFv2E64QinA==
 
+"@fontsource/iosevka-aile@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@fontsource/iosevka-aile/-/iosevka-aile-5.0.7.tgz#b039ffd8fc6353a7c7420d3f181deeb570bbf1f4"
+  integrity sha512-cXgz3/ZMVzFGZVytAyjEmoRTd3IEIWJOekLNcoaxqSBdY27LUMY1EIYcNbOzm3pQmlheaW6EwRD8oH7k9DbMjQ==
+
 "@humanwhocodes/config-array@^0.11.13":
   version "0.11.13"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.13.tgz#075dc9684f40a531d9b26b0822153c1e832ee297"
