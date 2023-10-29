@@ -6,15 +6,6 @@ export const GalleryPage: React.FC = () => {
   return (
     <Layout>
       <ComixImage
-        src="/img/cat.jpg"
-        width={300}
-        captions={{
-          'bottom-left': 'cat.jpg',
-          'top-right': 'TOP_RIGHT',
-        }}
-        captionsTypeEffect
-      />
-      <ComixImage
         src="/img/pivo.jpg"
         width={200}
         captions={{
@@ -43,16 +34,6 @@ export const GalleryPage: React.FC = () => {
         captionsTypeEffect
       />
       <ComixImage
-        src="/img/march7.jpg"
-        width={400}
-        captions={{
-          'bottom-left': 'march7.jpg',
-          'top-left': 'TOP_LEFT',
-          'bottom-right': 'BOTTOM_RIGHT',
-        }}
-        captionsTypeEffect
-      />
-            <ComixImage
         src="/img/catgirls.jpg"
         width={400}
         captions={{
