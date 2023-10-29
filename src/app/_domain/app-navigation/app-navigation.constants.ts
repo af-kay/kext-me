@@ -5,7 +5,7 @@ import { AppRoute } from './app-navigation.types';
 const IndexPage = React.lazy(() => import('$pages/index-page'));
 const GalleryPage = React.lazy(() => import('$pages/gallery-page'));
 
-export const APP_ROUTES: AppRoute[] = [
+export const APP_ROUTES: Readonly<AppRoute[]> = [
   {
     name: '~',
     path: '',
@@ -31,4 +31,4 @@ export const APP_ROUTES: AppRoute[] = [
     path: '/baz',
     isDisabled: true,
   },
-];
+] as const;

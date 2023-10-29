@@ -9,6 +9,8 @@ export const hashLocation = () => window.location.hash.replace(/^#/, '') || '/';
 
 export const hashNavigate = (to: Path) => navigate('#' + to);
 
+export const makeHashPath = (to: Path) => '#' + to;
+
 export const useHashLocation: BaseLocationHook = () => {
   const location = useLocationProperty(hashLocation);
 

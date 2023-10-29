@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { Link } from 'wouter';
 
 import { useAppRoutes } from '../_domain/app-navigation';
+
+import { AppLink } from '$lib/routing';
 
 export const AppHeaderContent: React.FC = () => {
   const { activeRoutes } = useAppRoutes();
@@ -10,9 +11,9 @@ export const AppHeaderContent: React.FC = () => {
     <Nav>
       <ul>
         {activeRoutes.map(route => (
-          <Link key={route.path} to={route.path}>
-            <li key={route.path}>{route.name}</li>
-          </Link>
+          <AppLink key={route.path} to={route.path}>
+            <li>{route.name}</li>
+          </AppLink>
         ))}
       </ul>
     </Nav>
@@ -20,7 +21,12 @@ export const AppHeaderContent: React.FC = () => {
 };
 
 const Nav = styled.nav`
+  padding: 2rem;
+
   ul {
+    display: flex;
+    gap: 4rem;
+
     list-style: none;
   }
 `;

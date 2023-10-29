@@ -16,4 +16,14 @@ export const AppLayout: React.FC<IAppLayout> = ({
   );
 };
 
-const Layout = styled.div``;
+const Layout = styled.div`
+  min-width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+
+  header {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+  }
+`;
