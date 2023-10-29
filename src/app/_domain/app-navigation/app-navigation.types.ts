@@ -14,7 +14,7 @@ export type DisabledAppRoute = AppRouteBase & {
 export type AppRoute = ActiveAppRoute | DisabledAppRoute;
 
 export type UseAppLinks = () => {
-  allRoutes: AppRoute[];
+  allRoutes: Readonly<AppRoute[]>;
   activeRoutes: ActiveAppRoute[];
   disabledRoutes: DisabledAppRoute[];
 };
