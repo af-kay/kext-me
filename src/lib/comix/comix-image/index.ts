@@ -1,1 +1,1 @@
-export { ComixImage } from './comix-image.component';
+export { ComixImage as default} from './comix-image.component';

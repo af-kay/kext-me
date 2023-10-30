@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 import { IGalleryImage } from './gallery-image.types';
 
-import { ComixImage } from '$lib/comix/comix-image';
+import ComixImage from '$lib/comix/comix-image';
 
 export const GalleryImage: React.FC<IGalleryImage> = ({
   item,

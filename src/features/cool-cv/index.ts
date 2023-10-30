@@ -1,1 +1,1 @@
-export { CoolCv } from './cool-cv.component';
+export { CoolCv as default } from './cool-cv.component';

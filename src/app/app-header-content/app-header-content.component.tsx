@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { useAppRoutes } from '../_domain/app-navigation';
 
-import { AppLink } from '$lib/routing';
+import AppLink from '$lib/app-link';
 
 export const AppHeaderContent: React.FC = () => {
   const { activeRoutes } = useAppRoutes();
