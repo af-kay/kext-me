@@ -5,7 +5,8 @@ import {
   useLocationProperty,
 } from 'wouter/use-location';
 
-export const hashLocation = () => window.location.hash.replace(/^#/, '') || '/';
+export const hashLocation = () =>
+  window.location.hash.replace(/^#/, '') || APP_BASE;
 
 export const hashNavigate = (to: Path) => navigate('#' + to);
 
