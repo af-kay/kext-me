@@ -8,19 +8,23 @@ export const Introductory = () => {
       <h1>Привет!</h1>
       <p>
         Меня зовут Артём, работаю в{' '}
-        <ExternalLink href="https://kotelov.com">Котелове</ExternalLink>.
-        Занимаюсь профессиональной фронтенд-разработкой с 2019-го года. Основной
-        стек: <code>React+TS, `@tanstack/react-query`, sass-mod/styled</code>. Есть опыт с{' '}
+        <ExternalLink href="https://kotelov.com">Котелове</ExternalLink>{' '}
+        (Москва). Занимаюсь профессиональной фронтенд-разработкой с 2019-го
+        года. Основной стек:{' '}
+        <code>React+TS, `@tanstack/react-query`, sass-mod/styled</code>. Есть
+        опыт с{' '}
         <code>
-          redux+toolkit, MobX, webpack/vite, react-*-form, mui/antd, OpenApi/Swagger, Django
+          redux+toolkit, MobX, webpack/vite, react-*-form, mui/antd,
+          OpenApi/Swagger, Django
         </code>
         .
       </p>
       <ParagraphExperienceShort>
         Мои рандомные теги на 20 секунд вашей жизни:{' '}
         <code>
-          Селекты, таблицы, виртуальный скролл, диаграммы, сложные формы, svg+css, анимации,
-          оптимизации бандла и ассетов, тесты, контрактное программирование, моки и точно что-то еще
+          Селекты, таблицы, виртуальный скролл, диаграммы, сложные формы,
+          svg+css, анимации, оптимизации бандла и ассетов, тесты, контрактное
+          программирование, моки и точно что-то еще
         </code>
         .
       </ParagraphExperienceShort>

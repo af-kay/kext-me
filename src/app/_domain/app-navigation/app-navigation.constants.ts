@@ -4,6 +4,7 @@ import { AppRoute } from './app-navigation.types';
 
 const MainPage = React.lazy(() => import('$pages/main-page'));
 const GalleryPage = React.lazy(() => import('$pages/gallery-page'));
+const ContactsPage = React.lazy(() => import('$pages/contacts-page'));
 
 export const APP_ROUTES: Readonly<AppRoute[]> = [
   {
@@ -15,6 +16,11 @@ export const APP_ROUTES: Readonly<AppRoute[]> = [
     name: '~/gallery',
     path: '/gallery',
     component: GalleryPage,
+  },
+  {
+    name: '~/contacts',
+    path: '/contacts',
+    component: ContactsPage,
   },
   {
     name: '~/foo',
