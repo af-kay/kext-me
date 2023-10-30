@@ -9,7 +9,7 @@ const ContactsPage = React.lazy(() => import('$pages/contacts-page'));
 export const APP_ROUTES: Readonly<AppRoute[]> = [
   {
     name: '~',
-    path: '',
+    path: APP_BASE,
     component: MainPage,
   },
   {
