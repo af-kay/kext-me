@@ -23,4 +23,21 @@ const Layout = styled.div`
   padding: 0 64px 16px 64px;
 
   max-width: 800px;
+
+  p {
+    text-align: justify;
+    text-indent: 2em;
+    text-justify: inter-word;
+
+    &::first-line {
+      margin-left: 8px;
+    }
+  }
+
+  code {
+    padding: 4px;
+    background: white;
+    color: black;
+    text-shadow: none;
+  }
 `;

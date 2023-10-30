@@ -32,21 +32,6 @@ const Layout = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-
-  p {
-    text-align: start;
-
-    &::first-line {
-      margin-left: 8px;
-    }
-  }
-
-  code {
-    padding: 4px;
-    background: white;
-    color: black;
-    text-shadow: none;
-  }
 `;
 
 const ParagraphExperienceShort = styled.p``;
