@@ -1,4 +1,4 @@
-import { ComixCaptionPosition } from './comix-caption/comix-caption.types';
+import { ComixCaptionPosition } from './comix-caption';
 
 export type IComixImage = {
   src: string;
