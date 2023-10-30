@@ -6,7 +6,6 @@ export const Jobs: React.FC = () => {
   return (
     <Layout>
       <h1>Опыт работы</h1>
-      <hr />
       <Layout>
         <h4>
           <ExternalLink href="https://kotelov.com">KOTELOV</ExternalLink> (Aug

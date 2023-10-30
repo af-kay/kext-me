@@ -7,6 +7,8 @@ export const CoolCv: React.FC = () => {
   return (
     <Layout>
       <Introductory />
+      <hr />
+
       <Jobs />
       {/* TODO: About me (I LOVE COOL PEOPLE AND PRODUCTIVE TEAMS) */}
     </Layout>
